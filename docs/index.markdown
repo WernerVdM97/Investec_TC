@@ -5,7 +5,11 @@
 
 # Who Are We
 
-We are a group of postgraduate engineering students from Stellenbosch University. 
+We are a group of postgraduate engineering students from Stellenbosch University. We have a strong interest in software development and specifically various machine learning techniques and applications. 
+
+While our current research differs in scope and focus between group members, each one of us has had or is currently researching techniques applicable to low resource languages. 
+
+The group is very excited to tackle a problem in the crypto space and to get exposure to blockchain development.
 
 # The Team
 
@@ -32,12 +36,11 @@ I am a postgraduate engineering student with a passion for software development.
 
 <img src="assets/werner1.jpg" alt="Werner van der Merwe" width="400"/>
 
-BEng E&E graduate that majored in informatics. Currently, final year MEng Industrial Engineering student majoring in data science. Crypto enthusiast since 2017.
+There are two Werners in this team, to make it even more confusing we also have the same surname. BEng E&E graduate that majored in informatics. Currently, final year MEng Industrial Engineering student majoring in data science. Crypto enthusiast since 2017.
 
 ## Werner van der Merwe #2
 
 <img src="assets/werner2.jpg" alt="Werner van der Merwe" width="400"/>
 
-
-
-# The Goal
+Werner is currently a postgraduate electronic engineering student working on unsupervised language problems with a main focus on using probabilistic graphical models and other Bayesian techniques in order to do phoneme classification of spoken language.
+Werner loves developing software and working with people. 
