@@ -21,7 +21,7 @@
 title: Investec Tech Challenge 2021
 email: wvdm1217@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  The entry of a Team from Stellenbosch University to partake in the Investec Tech Challenge 2021.
+  Expansion of the Investec Digital Asset Vault - Stellenbosch University Team
 baseurl: "/investec_tech_challenge_2021" # the subpath of your site, e.g. /blog
 url: "https://wvdm1217.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 domain: "wvdm1217.github.io"
