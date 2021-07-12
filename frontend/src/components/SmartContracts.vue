@@ -35,111 +35,111 @@
 
           <v-row class="text-centre">
             <v-col
-              cols="6"
-              sm="6"
-              md="4"
+              cols="2"
             > 
+              <v-row>
               <v-text-field
-                label="34 ETH"
+                label="34.000"
                 solo
                 dense
                 disabled
+                suffix="ETH"
               ></v-text-field>
+              <v-icon class="mb-6">mdi-ethereum</v-icon>
+              </v-row>
             </v-col>
           
             <v-col
-              cols="12"
-              sm="6"
-              md="1"
+              cols="1"
             >
-            <v-icon>mdi-ethereum</v-icon> to
+            transfer to
             </v-col>
 
             <v-col
-              cols="6"
-              sm="6"
-              md="4"
+              cols="4"
             >
+              <v-row>
               <v-text-field
                 label="John (0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2)"
                 solo
                 dense
                 disabled
               ></v-text-field>
+              </v-row>
             </v-col>
           </v-row>
 
           <v-row class="text-centre">
             <v-col
-              cols="6"
-              sm="6"
-              md="4"
+              cols="2"
             > 
+              <v-row >
               <v-text-field
-                label="200 ETH"
+                label="200.000"
                 solo
                 dense
                 disabled
+                suffix="ETH"
+                class="text-right"
               ></v-text-field>
+              <v-icon class="mb-6">mdi-ethereum</v-icon>
+              </v-row>
             </v-col>
 
             <v-col
-              cols="12"
-              sm="6"
-              md="1"
+              cols="1"
+              class="mt-1 "
             >
-            <v-icon>mdi-ethereum</v-icon> to
+            transfer to
             </v-col>
 
             <v-col
-              cols="6"
-              sm="6"
-              md="4"
+              cols="4"
             >
+              <v-row>
               <v-text-field
                 label="Sara (0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2)"
                 solo
                 dense
                 disabled
-
-
               ></v-text-field>
+              </v-row>
             </v-col>
           </v-row>
 
           <v-row class="text-centre">
             <v-col
-              cols="6"
-              sm="6"
-              md="4"
+              cols="2"
             > 
+              <v-row >
               <v-text-field
-                label="House NFT"
+                label="House, Sandton"
                 solo
                 dense
                 disabled
+                suffix="NFT"
               ></v-text-field>
+              <v-icon class="mb-6">mdi-home</v-icon>
+              </v-row>
             </v-col>
 
             <v-col
-              cols="12"
-              sm="6"
-              md="1"
+              cols="1"
             >
-            to
+            transfer to
             </v-col>
 
             <v-col
-              cols="6"
-              sm="6"
-              md="4"
+              cols="4"
             >
+            <v-row>
               <v-text-field
                 label="Sharon (0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2)"
                 solo
                 dense
                 disabled
               ></v-text-field>
+            </v-row>
             </v-col>
           </v-row>
 
