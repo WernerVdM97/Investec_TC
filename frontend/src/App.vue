@@ -50,6 +50,13 @@
       <History v-show="tab == 'History'"></History>
       <Send v-show="tab == 'Send'"></Send>
     </v-main>
+
+
+    <v-footer dark color="blue-grey darken-4">
+      <v-col>Investec 2020</v-col>
+
+
+    </v-footer>
   </v-app>
 </template>
 
@@ -77,10 +84,10 @@ export default {
       this.tab = "MyWallet"
     },
     clickHistory(){
-      this.tab = "Send"
+      this.tab = "History"
     },
     clickSend(){
-      this.tab = "History"
+      this.tab = "Send"
     },
   }
 };
