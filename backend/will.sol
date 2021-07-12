@@ -3,8 +3,19 @@
 */
 
 pragma solidity 0.8.0;
-import "https://github.com/0xcert/ethereum-erc721/src/contracts/tokens/erc721.sol";
-import "https://github.com/0xcert/ethereum-erc721/src/contracts/tokens/erc721-token-receiver.sol";
+
+import "https://github.com/0xcert/ethereum-erc721/src/contracts/tokens/nf-token-metadata.sol";
+import "https://github.com/0xcert/ethereum-erc721/src/contracts/ownership/ownable.sol";
+
+
+contract newNFT is NFTokenMetadata, Ownable {
+ 
+    function transfer(address to) public {
+        owner = to;
+    }
+}
+
+
 
 contract Will{
     address owner;
@@ -18,27 +29,28 @@ contract Will{
     }
     
     address payable[] familyWallets;
-    //address payable[] familyWallets2;
+    address payable[] familyWallets2;
     
     
     //Deposit Functions
     
     mapping (address => uint) public inheritance;
-    //mapping (address => address) public nfts;
+    mapping (address => address) public nfts;
     
     function setEthInheritance(address payable wallet, uint inheritAmount) public onlyOwner{
         familyWallets.push(wallet);
         inheritance[wallet] = inheritAmount;
     }
     
-	/* not working
-    *function setNFTInheritance(address payable wallet, ERC721 _token) public {
-    *    familyWallets2.push(wallet);
-    *    //nfts[wallet] = _token;
-    *    _token.approve(address(this), 1);
-    *    _token.transferFrom(msg.sender, address(this), 1);
-    *}
-	*/
+    function setNFTInheritance(address payable wallet, address _nft) public {
+        familyWallets2.push(wallet);
+        
+        nfts[wallet] = _nft;
+        
+        newNFT token = newNFT(_nft);
+        
+        token.transfer(address(this));
+    }
         
     
     // Distribute functions
@@ -51,11 +63,10 @@ contract Will{
         }
         
         //NFT
-		/*
-        *for(uint i = 0 ; i < familyWallets2.length; i++){
-        *    ERC721(nfts[familyWallets2[i]]).safeTransferFrom(address(this), familyWallets2[i], 1);
-        *}
-        */
+        for(uint i = 0 ; i < familyWallets2.length; i++){
+            newNFT(nfts[familyWallets2[i]]).transfer(familyWallets2[i]);
+        }
+        
     }
     
     
