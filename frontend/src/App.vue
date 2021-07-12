@@ -37,32 +37,51 @@
       </v-btn>
 
       <template v-slot:extension>
-        <v-tabs align-with-title>
-          <v-tab>My Wallets</v-tab>
-          <v-tab>Send</v-tab>
-          <v-tab>History</v-tab>
+        <v-tabs valign-with-title >
+          <v-tab @click="clickMyWallet()" >My Wallets</v-tab>
+          <v-tab @click="clickSend()">Send</v-tab>
+          <v-tab @click="clickHistory()">History</v-tab>
         </v-tabs>
       </template>
     </v-app-bar>
 
     <v-main>
-      <HelloWorld/>
+      <MyWallet v-show="tab == 'MyWallet'"></MyWallet>
+      <History v-show="tab == 'History'"></History>
+      <Send v-show="tab == 'Send'"></Send>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+import MyWallet from './components/MyWallet';
+import History from './components/History';
+import Send from './components/Send';
 
 export default {
   name: 'App',
 
   components: {
-    HelloWorld,
+    MyWallet,
+    History,
+    Send,
   },
 
-  data: () => ({
-    //
-  }),
+  data() {
+    return {
+      tab: "MyWallet"
+    };
+  },
+  methods: {
+    clickMyWallet(){
+      this.tab = "MyWallet"
+    },
+    clickHistory(){
+      this.tab = "Send"
+    },
+    clickSend(){
+      this.tab = "History"
+    },
+  }
 };
 </script>
