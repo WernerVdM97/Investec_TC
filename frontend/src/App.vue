@@ -53,7 +53,22 @@
 
 
     <v-footer dark color="blue-grey darken-4">
-      <v-col>Investec 2020</v-col>
+      <v-row class="ma-4"> 
+        <v-text class="mt-2">© Investec 2021</v-text>
+
+        <v-btn plain link="true" href="https://www.investec.com/en_za/welcome-to-investec/about-us.html"> About Investec</v-btn>
+        <v-btn plain link="true" href="https://www.investec.com/en_za/welcome-to-investec/about-us.html"> Legal</v-btn>
+        <v-btn plain link="true" href="https://www.investec.com/en_za/welcome-to-investec/about-us.html"> Security Advice</v-btn>
+        <v-btn plain link="true" href="https://www.investec.com/en_za/welcome-to-investec/about-us.html"> Help &#38; Support</v-btn>
+        <v-btn plain link="true" href="https://www.investec.com/en_za/welcome-to-investec/about-us.html"> Contact Us</v-btn>
+
+        <v-spacer></v-spacer>
+
+        <v-btn plain link="true" href="https://www.investec.com/en_za/welcome-to-investec/about-us.html"><v-icon>mdi-comment-text</v-icon> Feedback</v-btn>
+        <v-btn color="green" plain link="true" href="https://www.investec.com/en_za/welcome-to-investec/about-us.html"><v-icon >mdi-lock</v-icon> Securely Connected</v-btn>
+
+      </v-row>
+
 
 
     </v-footer>
