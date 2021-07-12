@@ -41,6 +41,7 @@
           <v-tab @click="clickMyWallet()" >My Wallets</v-tab>
           <v-tab @click="clickSend()">Send</v-tab>
           <v-tab @click="clickHistory()">History</v-tab>
+          <v-tab @click="clickSmartContracts()">Smart Contracts</v-tab>
         </v-tabs>
       </template>
     </v-app-bar>
@@ -49,6 +50,7 @@
       <MyWallet v-show="tab == 'MyWallet'"></MyWallet>
       <History v-show="tab == 'History'"></History>
       <Send v-show="tab == 'Send'"></Send>
+      <SmartContracts v-show="tab == 'SmartContracts'"></SmartContracts>
     </v-main>
 
 
@@ -79,6 +81,7 @@
 import MyWallet from './components/MyWallet';
 import History from './components/History';
 import Send from './components/Send';
+import SmartContracts from './components/SmartContracts';
 
 export default {
   name: 'App',
@@ -87,6 +90,7 @@ export default {
     MyWallet,
     History,
     Send,
+    SmartContracts
   },
 
   data() {
@@ -104,6 +108,9 @@ export default {
     clickSend(){
       this.tab = "Send"
     },
+    clickSmartContracts(){
+      this.tab = "SmartContracts"
+    }
   }
 };
 </script>

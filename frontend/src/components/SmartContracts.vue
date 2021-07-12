@@ -7,7 +7,7 @@
         </h1>
 
         <p class="subheading font-weight-regular">
-          History
+          Smart Contracts
         </p>
       </v-col>
 
@@ -22,7 +22,7 @@
 
 <script>
   export default {
-    name: 'History',
+    name: 'SmartContracts',
 
     data: () => ({
      

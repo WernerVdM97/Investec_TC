@@ -54,7 +54,10 @@
       </v-col>
 
 
-
+      <v-col>
+        <v-card>Bitcoin Price</v-card>
+        <v-card>Ethereum Price</v-card>
+      </v-col>
 
 
       
