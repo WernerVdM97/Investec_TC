@@ -13,57 +13,97 @@
           <v-expansion-panels focusable>
             <v-expansion-panel
             >
-              <v-expansion-panel-header>Bitcoin</v-expansion-panel-header>
+              <v-expansion-panel-header>Bitcoin Wallets</v-expansion-panel-header>
               <v-expansion-panel-content class="mt-2" >
                 
                 <v-card class="ma-0" border="0">
+                  <v-row>
+                  <v-col cols="8">
                   <v-card-title>Spending Bitcoin</v-card-title>
-                  <v-card-subtitle>Wallet Address: 0x6cb7dfa5c468ca8efbd5324f747ce52e74e4db50 <v-icon>mdi-share-variant</v-icon></v-card-subtitle>
-                  <v-card-text class="text-left">0.00000000 BTC</v-card-text>
+                  <v-card-subtitle>Wallet Address: 0x5c6B0f7Bf3E7ce046039Bd8FABdfD3f9F5021678 <v-icon>mdi-share-variant</v-icon></v-card-subtitle>
+                  
+                  </v-col>
+                  <v-col cols="4">
+                    <v-card-text class="text-left">0.00000000 BTC</v-card-text>
+                  </v-col>
+                  </v-row>
                 </v-card>
               </v-expansion-panel-content>
               <v-divider></v-divider>
               <v-expansion-panel-content class="mt-2">
                 <v-card class="ma-0" border="0">
+                  <v-row>
+                    <v-col cols="8">
                   <v-card-title>Trading Bitcoin</v-card-title>
-                  <v-card-subtitle>Wallet Address: 0x6cb7dfa5c468ca8efbd5324f747ce52e74e4db50 <v-icon>mdi-share-variant</v-icon></v-card-subtitle>
-                  <v-card-text class="text-left">0.00000000 BTC</v-card-text>
+                  <v-card-subtitle>Wallet Address: 0x0A098Eda01Ce92ff4A4CCb7A4fFFb5A43EBC70DC <v-icon>mdi-share-variant</v-icon></v-card-subtitle>
+                  
+                  </v-col>
+                  <v-col cols="4">
+                    <v-card-text class="text-left">0.00000000 BTC</v-card-text>
+                  </v-col>
+                  </v-row>
                 </v-card>
               </v-expansion-panel-content>
               <v-divider></v-divider>
               <v-expansion-panel-content class="mt-2">
                 <v-card class="ma-0" border="0">
+                  <v-row>
+                    <v-col cols="8">
                   <v-card-title>Saving Bitcoin</v-card-title>
-                  <v-card-subtitle>Wallet Address: 0x6cb7dfa5c468ca8efbd5324f747ce52e74e4db50 <v-icon>mdi-share-variant</v-icon></v-card-subtitle>
-                  <v-card-text class="text-left">0.00000000 BTC</v-card-text>
+                  <v-card-subtitle>Wallet Address: 0x17F6AD8Ef982297579C203069C1DbfFE4348c372 <v-icon>mdi-share-variant</v-icon></v-card-subtitle>
+                  
+                  </v-col>
+                  <v-col cols="4">
+                    <v-card-text class="text-left">0.00000000 BTC</v-card-text>
+                  </v-col>
+                  </v-row>
                 </v-card>
               </v-expansion-panel-content>
               
             </v-expansion-panel>
             <v-expansion-panel
             >
-              <v-expansion-panel-header>Ethereum</v-expansion-panel-header>
+              <v-expansion-panel-header>Ethereum Wallets</v-expansion-panel-header>
               <v-expansion-panel-content class="mt-2">
+                
                 <v-card class="ma-0" border="0">
+                  <v-row>
+                    <v-col cols="8">
                   <v-card-title>Spending Ethereum</v-card-title>
-                  <v-card-subtitle>Wallet Address: 0x6cb7dfa5c468ca8efbd5324f747ce52e74e4db50 <v-icon>mdi-share-variant</v-icon></v-card-subtitle>
-                  <v-card-text class="text-left">0.00000000 ETH</v-card-text>
+                  <v-card-subtitle>Wallet Address: 0xdD870fA1b7C4700F2BD7f44238821C26f7392148 <v-icon>mdi-share-variant</v-icon></v-card-subtitle>
+                  </v-col>
+                  <v-col cols="4">
+                    <v-card-text class="text-left">0.00000000 ETH</v-card-text>
+                  </v-col>
+                  </v-row>
                 </v-card>
               </v-expansion-panel-content>
               <v-divider></v-divider>
               <v-expansion-panel-content class="mt-2">
                 <v-card class="ma-0" border="0">
+                  <v-row>
+                    <v-col cols="8">
                   <v-card-title>Trading Ethereum</v-card-title>
-                  <v-card-subtitle>Wallet Address: 0x6cb7dfa5c468ca8efbd5324f747ce52e74e4db50 <v-icon>mdi-share-variant</v-icon></v-card-subtitle>
-                  <v-card-text class="text-left">0.00000000 ETH</v-card-text>
+                  <v-card-subtitle>Wallet Address: 0x4B0897b0513fdC7C541B6d9D7E929C4e5364D2dB <v-icon>mdi-share-variant</v-icon></v-card-subtitle>
+                  </v-col>
+                  <v-col cols="4">
+                    <v-card-text class="text-left">0.00000000 BTC</v-card-text>
+                  </v-col>
+                  </v-row>
                 </v-card>
               </v-expansion-panel-content>
               <v-divider></v-divider>
               <v-expansion-panel-content class="mt-2">
                 <v-card class="ma-0" border="0">
+                  <v-row>
+                    <v-col cols="8">
                   <v-card-title>Saving Ethereum</v-card-title>
-                  <v-card-subtitle>Wallet Address: 0x6cb7dfa5c468ca8efbd5324f747ce52e74e4db50 <v-icon>mdi-share-variant</v-icon></v-card-subtitle>
-                  <v-card-text class="text-left">0.00000000 ETH</v-card-text>
+                  <v-card-subtitle>Wallet Address: 0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2 <v-icon>mdi-share-variant</v-icon></v-card-subtitle>
+                  </v-col>
+                  <v-col cols="4">
+                    <v-card-text class="text-left">0.00000000 BTC</v-card-text>
+                  </v-col>
+                  </v-row>
                 </v-card>
               </v-expansion-panel-content>
             </v-expansion-panel>
@@ -93,11 +133,9 @@
 </template>
 
 <script>
-  export default {
-    name: 'MyWallet',
+export default {
+  name: "MyWallet",
 
-    data: () => ({
-      
-    }),
-  }
+  data: () => ({}),
+};
 </script>
