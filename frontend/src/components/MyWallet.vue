@@ -104,10 +104,15 @@
                     <v-card-text class="text-left">0.00100000 ETH</v-card-text>
                     <v-card class="mr-3">
                       <v-list>
-                        <v-list-item>NFT</v-list-item>
-                        <v-list-item>NFT</v-list-item>
-                        <v-list-item>NFT</v-list-item>
-                        <v-list-item>NFT</v-list-item>
+                        <v-list-title><b>Tokens:</b></v-list-title>
+                        <v-divider></v-divider>
+                        <v-list-item>NFT: Lamborgini Huracán (Minted: 2018-07-14)</v-list-item>
+                        <v-divider></v-divider>
+                        <v-list-item>NFT: House, Clifton (Minted: 2016-12-03)</v-list-item>
+                        <v-divider></v-divider>
+                        <v-list-item>NFT: Beeple Artwork (Minted: 2020-01-23)</v-list-item>
+                        <v-divider></v-divider>
+                        <v-list-item>NFT: Investec Uber Eats Voucher(Minted: 2021-07-12)</v-list-item>
                       </v-list>
                     </v-card>
                   </v-col>
