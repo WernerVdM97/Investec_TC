@@ -87,7 +87,7 @@
                   <v-card-subtitle>Wallet Address: 0x4B0897b0513fdC7C541B6d9D7E929C4e5364D2dB <v-icon>mdi-share-variant</v-icon></v-card-subtitle>
                   </v-col>
                   <v-col cols="4">
-                    <v-card-text class="text-left">0.00000000 BTC</v-card-text>
+                    <v-card-text class="text-left">0.00000000 ETH</v-card-text>
                   </v-col>
                   </v-row>
                 </v-card>
@@ -101,7 +101,15 @@
                   <v-card-subtitle>Wallet Address: 0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2 <v-icon>mdi-share-variant</v-icon></v-card-subtitle>
                   </v-col>
                   <v-col cols="4">
-                    <v-card-text class="text-left">0.00000000 BTC</v-card-text>
+                    <v-card-text class="text-left">0.00100000 ETH</v-card-text>
+                    <v-card class="mr-3">
+                      <v-list>
+                        <v-list-item>NFT</v-list-item>
+                        <v-list-item>NFT</v-list-item>
+                        <v-list-item>NFT</v-list-item>
+                        <v-list-item>NFT</v-list-item>
+                      </v-list>
+                    </v-card>
                   </v-col>
                   </v-row>
                 </v-card>
