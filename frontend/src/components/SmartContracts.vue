@@ -159,7 +159,17 @@
             Unassigned Assets
           </v-expansion-panel-header>
           <v-expansion-panel-content>
-            NFT
+            <v-list>
+              <v-list-title><b>Tokens:</b></v-list-title>
+              <v-divider></v-divider>
+              <v-list-item>NFT: Lamborgini Huracán (Minted: 2018-07-14)</v-list-item>
+              <v-divider></v-divider>
+              <v-list-item>NFT: House, Clifton (Minted: 2016-12-03)</v-list-item>
+              <v-divider></v-divider>
+              <v-list-item>NFT: Beeple Artwork (Minted: 2020-01-23)</v-list-item>
+              <v-divider></v-divider>
+              <v-list-item>NFT: Investec Uber Eats Voucher(Minted: 2021-07-12)</v-list-item>
+            </v-list>
           </v-expansion-panel-content>
         </v-expansion-panel>
       </v-expansion-panels>
