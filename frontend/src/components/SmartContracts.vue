@@ -119,7 +119,7 @@
                 disabled
                 suffix="NFT"
               ></v-text-field>
-              <v-icon class="mb-6">mdi-home</v-icon>
+              <v-icon class="mb-6">mdi-tag-text</v-icon>
               </v-row>
             </v-col>
 
