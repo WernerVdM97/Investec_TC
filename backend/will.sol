@@ -31,7 +31,6 @@ contract Will{
     address payable[] familyWallets;
     address payable[] familyWallets2;
     
-    
     //Deposit Functions
     
     mapping (address => uint) public inheritance;
@@ -47,9 +46,6 @@ contract Will{
         
         nfts[wallet] = _nft;
         
-        newNFT token = newNFT(_nft);
-        
-        token.transfer(address(this));
     }
         
     
@@ -64,7 +60,7 @@ contract Will{
         
         //NFT
         for(uint i = 0 ; i < familyWallets2.length; i++){
-            newNFT(nfts[familyWallets2[i]]).transfer(familyWallets2[i]);
+            newNFT(nfts[familyWallets2[i]]).safeTransferFrom(owner, familyWallets2[i], 1);
         }
         
     }
