@@ -17,12 +17,12 @@
             Document
           </v-expansion-panel-header>
           <v-expansion-panel-content>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </v-expansion-panel-content>
+            Hi, my name is Dave and this is my will in the form of a smart contract. 
+            <br>
+            I know I should stop smoking, but I do not see that happening.
+            <br>
+            Anyway here is my will, I hope my kids do not spend all my crypto on NFT Kitties
+            </v-expansion-panel-content>
         </v-expansion-panel>
       </v-expansion-panels>
 
@@ -42,7 +42,7 @@
                 label="34.000"
                 solo
                 dense
-                disabled
+                :disabled="sent == 'true'"
                 suffix="ETH"
               ></v-text-field>
               <v-icon class="mb-6">mdi-ethereum</v-icon>
@@ -63,7 +63,7 @@
                 label="John (0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2)"
                 solo
                 dense
-                disabled
+                :disabled="sent == 'true'"
               ></v-text-field>
               </v-row>
             </v-col>
@@ -78,7 +78,7 @@
                 label="200.000"
                 solo
                 dense
-                disabled
+                :disabled="sent == 'true'"
                 suffix="ETH"
                 class="text-right"
               ></v-text-field>
@@ -101,7 +101,7 @@
                 label="Sara (0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2)"
                 solo
                 dense
-                disabled
+                :disabled="sent == 'true'"
               ></v-text-field>
               </v-row>
             </v-col>
@@ -116,7 +116,7 @@
                 label="House, Sandton"
                 solo
                 dense
-                disabled
+                :disabled="sent == 'true'"
                 suffix="NFT"
               ></v-text-field>
               <v-icon class="mb-6">mdi-tag-text</v-icon>
@@ -137,13 +137,13 @@
                 label="Sharon (0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2)"
                 solo
                 dense
-                disabled
+                :disabled="sent == 'true'"
               ></v-text-field>
             </v-row>
             </v-col>
           </v-row>
 
-
+          <v-row v-show="sent =='false'"><v-spacer></v-spacer><v-btn icon fab><v-icon large color="blue">mdi-plus-circle</v-icon></v-btn><v-spacer></v-spacer></v-row>
 
 
 
@@ -162,7 +162,7 @@
             <v-list>
               <v-list-title><b>Tokens:</b></v-list-title>
               <v-divider></v-divider>
-              <v-list-item>NFT: Lamborgini Huracán (Minted: 2018-07-14)</v-list-item>
+              <v-list-item>NFT: Lamborgini Huracán (Minted: 2018-07-14)<v-btn icon></v-btn></v-list-item>
               <v-divider></v-divider>
               <v-list-item>NFT: House, Clifton (Minted: 2016-12-03)</v-list-item>
               <v-divider></v-divider>
@@ -173,17 +173,25 @@
           </v-expansion-panel-content>
         </v-expansion-panel>
       </v-expansion-panels>
-
+      <v-col><v-spacer></v-spacer><v-icon v-show="sent == 'true'" large color="green">mdi-check-circle</v-icon><v-card v-show="sent == 'false'"><v-btn @click="send()" dark >Send will application to Investec</v-btn></v-card><v-spacer></v-spacer></v-col>
     </v-row>
   </v-container>
 </template>
 
 <script>
-  export default {
-    name: 'SmartContracts',
+export default {
+  name: "SmartContracts",
 
-    data: () => ({
-     
-    }),
-  }
+  data() {
+    return {
+      sent: "false",
+      
+    };
+  },
+  methods: {
+    send() {
+      this.sent = "true"
+    },
+  },
+};
 </script>
