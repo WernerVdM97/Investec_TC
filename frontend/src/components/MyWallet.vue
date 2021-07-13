@@ -10,7 +10,7 @@
               <v-expansion-panel-header
                 ><b>Bitcoin Wallets</b></v-expansion-panel-header
               >
-              <v-card v-show="wallet != '0'" height="100" class="ma-0">
+              <v-card v-show="false" height="100" class="ma-0">
                 <v-row class="ma-0">
                   <v-col> Total: 0.00111000 BTC </v-col>
                 </v-row>
